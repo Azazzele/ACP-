@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
+
+/* === MODERN CSS RESET === */
+
+/* 1. Box sizing */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* 2. Убираем стандартные отступы */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Базовые настройки body */
+html,
+body {
+	height: 100%;
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* 4. Улучшаем работу медиа */
+img,picture,video,canvas,svg {
+	display: block;
+	max-width: 100%;
+}
+
+/* 5. Наследование шрифтов */
+input,button,textarea,select {
+	font: inherit;
+}
+
+/* 6. Перенос длинных слов */
+p,h1,h2,h3,h4,h5,h6 {
+	overflow-wrap: break-word;
+	font-family: 'Space Grotesk', sans-serif;
+}
+p,  li, span {
+	font-family: 'Manrope', sans-serif;
+}
+/* 7. Убираем стили списков */
+ul,ol {
+	list-style: none;
+	padding: 0;
+}
+
+/* 8. Ссылки */
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* 9. Кнопки */
+button {
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+button, input {
+	font-family: 'Sora', sans-serif;
+}
+/* 10. Таблицы */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 11. Root stacking context */
+#root,
+#__next {
+	isolation: isolate;
+}

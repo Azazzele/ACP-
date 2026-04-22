@@ -1,0 +1,148 @@
+@use '../../style/global.scss' as *;
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
+
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 380px;
+  border: 1px solid rgba(100, 100, 120, 0.2);
+  border-radius: 20px;
+  padding: 40px 32px;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 40px;
+
+  h2 {
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  p {
+    color: #9ca3af;
+    font-size: 15px;
+  }
+}
+
+.input-group {
+  margin-bottom: 24px;
+
+  label {
+    display: block;
+    color: #9ca3af;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+
+  input {
+    width: 100%;
+    padding: 14px 16px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(148, 163, 184, 0.3);
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease;
+
+    &::placeholder {
+      color: #64748b;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: #6366f1;
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+      background: rgba(255, 255, 255, 0.08);
+    }
+  }
+}
+
+.role-section {
+  margin-bottom: 32px;
+
+  label {
+    display: block;
+    color: #9ca3af;
+    font-size: 14px;
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+
+  .role-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .role-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    border: 1px solid transparent;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  
+    &:hover {
+      background: rgba(255, 255, 255, 0.08);
+    }
+  
+    &.active {
+      border-color: #6366f1;
+      background: rgba(99, 102, 241, 0.12);
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+    }
+  
+    .role-icon {
+      font-size: 32px;           
+      color: #a1a1aa;
+      transition: color 0.3s ease;
+      
+    }
+  
+    &.active .role-icon {
+      color: #6366f1;
+    }
+  
+    .role-info {
+      strong { color: white; font-size: 16px; display: block; }
+      span { color: #94a3b8; font-size: 13px; }
+    }
+  }
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 16px;
+  color: white;
+  border: .8px solid $bg-color-second;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+
+  &:hover:not(:disabled) {
+    transform: translateY(-2px);
+  }
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+}
+
