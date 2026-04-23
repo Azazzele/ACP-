@@ -1,2 +1,6 @@
 .env
 .dockerignore
+node_modules 
+__pycache__
+dist / build
+.next

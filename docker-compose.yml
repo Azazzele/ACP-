@@ -1,0 +1,19 @@
+services:
+
+  backend:
+    build: backend
+    command: python ./main.py
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build: frontend/
+    command: npm run dev 
+    ports:
+      - "3000:3000"
+
+  ai-service:
+    build: ai_service/
+    ports:
+      - "5000:5000"
+  
