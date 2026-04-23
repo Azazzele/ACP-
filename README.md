@@ -6,7 +6,6 @@
 * Docker Compose
 
 ## ▶️ Запуск проекта
-
 ```bash
 docker compose up --build
 ```
