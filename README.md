@@ -1,4 +1,6 @@
-# 🚀 Project Setup
+Дипломный проект 
+
+# 🚀 Запуск приложения
 
 ## 📦 Требования
 
@@ -6,7 +8,6 @@
 * Docker Compose
 
 ## ▶️ Запуск проекта
-
 ```bash
 docker compose up --build
 ```
