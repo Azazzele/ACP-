@@ -1,4 +1,5 @@
-FROM  node:18
+FROM dockerhub.timeweb.cloud/library/node:22-slim
+
 
 WORKDIR /app
 

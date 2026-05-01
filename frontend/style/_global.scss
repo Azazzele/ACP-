@@ -1,10 +1,19 @@
 
+// Ваши основные цвета
 $bg-color: #0f1115;
 $bg-color-second: #1e2128;
 
 $color-text: #e6e6e6;
 $color-text-second: #9ca3af;
 $color-text-accent: #6366f1;
+
+// Дополнительные 5 цветов для индикаторов и акцентов
+$color-success: #10b981;       // Зеленый (статус, выполненные задачи)
+$color-warning: #f59e0b;       // Оранжевый (нужно подтянуть)
+$color-danger: #ef4444;        // Красный (критично)
+$bg-accent-soft: rgba(99, 102, 241, 0.1); // Прозрачный синий для фонов
+$border-color: #2d3139;        // Цвет границ
+
 
 
 

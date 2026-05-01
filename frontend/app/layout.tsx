@@ -1,5 +1,6 @@
 import '@/style/_global.scss'
 import '@/style/reset.css'
+import Header from '@/components/header/header';
 
 export default function RootLayout({
   children,
@@ -7,8 +8,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ru">
-      <body>{children}</body>
+    <html>
+      <head>
+      </head>
+      <body>
+        <Header/>
+        {children}
+      </body>
     </html>
   );
 }
